@@ -1,0 +1,5 @@
+1] For Cool Shell Env Install "powerline Shell"
+    https://github.com/banga/powerline-shell
+Install fonts from below link
+    http://powerline.readthedocs.io/en/master/installation/linux.html
+Restart the X11 to see the powerline font in action.
