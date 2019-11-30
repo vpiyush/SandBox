@@ -1,0 +1,77 @@
+
+a.out:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+__text:
+100000f00:	55 	pushq	%rbp
+100000f01:	48 89 e5 	movq	%rsp, %rbp
+100000f04:	48 8b 05 76 00 00 00 	movq	118(%rip), %rax
+100000f0b:	48 89 45 fe 	movq	%rax, -2(%rbp)
+100000f0f:	48 8b 05 73 00 00 00 	movq	115(%rip), %rax
+100000f16:	48 89 45 06 	movq	%rax, 6(%rbp)
+100000f1a:	48 8b 05 70 00 00 00 	movq	112(%rip), %rax
+100000f21:	48 89 45 0e 	movq	%rax, 14(%rbp)
+100000f25:	8b 0d 6e 00 00 00 	movl	110(%rip), %ecx
+100000f2b:	89 4d 16 	movl	%ecx, 22(%rbp)
+100000f2e:	66 8b 15 68 00 00 00 	movw	104(%rip), %dx
+100000f35:	66 89 55 1a 	movw	%dx, 26(%rbp)
+100000f39:	5d 	popq	%rbp
+100000f3a:	c3 	retq
+100000f3b:	0f 1f 44 00 00 	nopl	(%rax,%rax)
+100000f40:	55 	pushq	%rbp
+100000f41:	48 89 e5 	movq	%rsp, %rbp
+100000f44:	8b 05 63 00 00 00 	movl	99(%rip), %eax
+100000f4a:	89 45 fb 	movl	%eax, -5(%rbp)
+100000f4d:	c6 45 ff 00 	movb	$0, -1(%rbp)
+100000f51:	5d 	popq	%rbp
+100000f52:	c3 	retq
+100000f53:	66 66 66 66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+100000f60:	55 	pushq	%rbp
+100000f61:	48 89 e5 	movq	%rsp, %rbp
+100000f64:	48 83 ec 10 	subq	$16, %rsp
+100000f68:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000f6f:	e8 8c ff ff ff 	callq	-116 <__Z4fun1v>
+100000f74:	e8 c7 ff ff ff 	callq	-57 <__Z4fun2v>
+100000f79:	31 c0 	xorl	%eax, %eax
+100000f7b:	48 83 c4 10 	addq	$16, %rsp
+100000f7f:	5d 	popq	%rbp
+100000f80:	c3 	retq
+
+__Z4fun1v:
+100000f00:	55 	pushq	%rbp
+100000f01:	48 89 e5 	movq	%rsp, %rbp
+100000f04:	48 8b 05 76 00 00 00 	movq	118(%rip), %rax
+100000f0b:	48 89 45 fe 	movq	%rax, -2(%rbp)
+100000f0f:	48 8b 05 73 00 00 00 	movq	115(%rip), %rax
+100000f16:	48 89 45 06 	movq	%rax, 6(%rbp)
+100000f1a:	48 8b 05 70 00 00 00 	movq	112(%rip), %rax
+100000f21:	48 89 45 0e 	movq	%rax, 14(%rbp)
+100000f25:	8b 0d 6e 00 00 00 	movl	110(%rip), %ecx
+100000f2b:	89 4d 16 	movl	%ecx, 22(%rbp)
+100000f2e:	66 8b 15 68 00 00 00 	movw	104(%rip), %dx
+100000f35:	66 89 55 1a 	movw	%dx, 26(%rbp)
+100000f39:	5d 	popq	%rbp
+100000f3a:	c3 	retq
+100000f3b:	0f 1f 44 00 00 	nopl	(%rax,%rax)
+
+__Z4fun2v:
+100000f40:	55 	pushq	%rbp
+100000f41:	48 89 e5 	movq	%rsp, %rbp
+100000f44:	8b 05 63 00 00 00 	movl	99(%rip), %eax
+100000f4a:	89 45 fb 	movl	%eax, -5(%rbp)
+100000f4d:	c6 45 ff 00 	movb	$0, -1(%rbp)
+100000f51:	5d 	popq	%rbp
+100000f52:	c3 	retq
+100000f53:	66 66 66 66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+
+_main:
+100000f60:	55 	pushq	%rbp
+100000f61:	48 89 e5 	movq	%rsp, %rbp
+100000f64:	48 83 ec 10 	subq	$16, %rsp
+100000f68:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000f6f:	e8 8c ff ff ff 	callq	-116 <__Z4fun1v>
+100000f74:	e8 c7 ff ff ff 	callq	-57 <__Z4fun2v>
+100000f79:	31 c0 	xorl	%eax, %eax
+100000f7b:	48 83 c4 10 	addq	$16, %rsp
+100000f7f:	5d 	popq	%rbp
+100000f80:	c3 	retq

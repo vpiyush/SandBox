@@ -1,0 +1,19 @@
+Heap is a nearly complete binary tree. It is a visualization of array as binary tree
+That is why the comlexity will be logrithmic because the height of a complete binary tee is logarithmix.
+
+Max-heap: max heap is a nearly complete binary tree where each node has
+a children key value as less than it's parent key value.
+To max heapify a node in a heap.  the complexity would be -> O(logn)
+
+Build max-heap can be done for complexity of O(n) time.
+proof:
+ build_maxheap:
+    for i=n/2 to downto root node ==> O(n)
+        max_heapify(A, i)  ==> O(logn)
+
+from the above pseudo it looks like O(nlogn) but if mathematically proven it can become O(n). because as we go level up maxify nodes on each level. number of nodes in the level decrese till root node (upto 1), but the height of max heap increses.
+
+
+
+
+A heap can be seen as priority queue where each node has a weight as it's key

@@ -1,0 +1,13 @@
+
+
+// Escape function to turn off optimiation
+static void escape(void *p) {
+    asm volatile("" : : "g"(p): "memory");
+    }
+
+
+// clobber to read write into all memory of the program
+static void clobber() {
+    asm volatile("" : : : "memory");
+    }
+

@@ -1,0 +1,26 @@
+height of a tree is counted from the leaf depth is counted from root
+
+height of a node == max(rightsubtree, leftTree) + 1
+
+leaf nodes can be donted using left child and right child having -1 heights. By that logic leaf nodes are always having 0 hight
+
+
+AVL Tree
+        ==> Balanced binary trees, left child and right child can differ at most by height of 1.
+        ==/ that is why height is always O(log n)
+        ==> worst case could be for eg: right subtree has height 1 more than left tree for every node.
+        ==> To insert in an AVL tree
+            - add the node simply as we do in BST seeing the weight of the node
+            - fix the AVL property (height difference)
+                - To do this we maintain the height of the node on each node. (In terms of whether node left tree is heavier for right tree is heavier, just the difference)
+                - After inserting the node, A node may get heavier by 2 levels. which should never happen in AVL tree
+                - To fix this property we will have to perform left rotation or right rotation, to get backk to the previous differnce of max 1 for each node
+        ==> Use case/benefits of AVL treeo
+            - provides insertion time of a element as o(logn)) ==>(Imp note: BST is unable to provide logn insertion because its not balanced and height can grow as much as ttoatal noumber of nodes in the tree i.e. n.
+                - insertion time for n elements would be O(nlogn)
+            - In-order traversal can be done in linear time which is O(n)
+        ==> AVL tree is an ADT which could be used for efficient
+            1. Insert and delete
+            2. Min
+            3. Successor and predeccesor element useing Inorder traversal.
+            Note: If we want only 1 & 2 we can also use heap. It would act as priority queue, so we can say priority queue can be implemented using AVL tree and heaps

@@ -1,0 +1,12 @@
+Algorithm
+==> critera to choose a algo should be rate of growth of input data.
+    ==> time complexity
+    There are 3 criterias to denote the complexity
+    BigO O() => It suggests to take the upper bound of the complexity, i.e. BigO is most widely used to tell the complexity. (Worst case scenario)
+    Omega ==> Lower bound. i.e. Best case scenario
+    theta ==> Middle bound. i.e. average case
+
+possible complexity ==>
+1 < logn < sqrt(n) < n < n*n < n*n*n
+        ==> linear complexity
+    ==> space complexity
