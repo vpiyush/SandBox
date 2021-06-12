@@ -1,0 +1,29 @@
+C++
+which version of C++ you are using ? => if knows go ahead 
+1. what is virtual functions? why you need them?
+2. pure virtual/virutal
+3. virtual constructor & virtual descrutor?
+4. vptr & vtable?
+5. difference b/w ordered and unodered map?
+
+Common
+1. What is multithreading? what are the challenges faced in multithreading?
+    a. how to pass data between threads?
+    b. locks, read write locks?
+2. What is the data structure you used. pros a cons of a data structure
+3. socket Blocking/non blocking advantage/disadvantage?  => go deeper if required (epoll/select)
+4. why is there virtual memory? (page fault/page hit/ TLU)
+5. what is deadlock? why it occurs? what can be done to avoid this
+
+
+Debugging tools
+1. GDB
+2. Valgrind
+3. Whether used wireshark, how to analyze?
+
+Golang
+1. What is goroutine? goroutine vs threads?
+2. What are Channels? when to use them?
+
+specific technologies
+

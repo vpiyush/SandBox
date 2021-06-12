@@ -1,0 +1,35 @@
+
+create/{type}/name    => post
+    type => course, subjects, tag
+
+upload/{type}/name    => put
+    type => course, subjects, tag
+
+
+struct course {
+    string  name
+    list videos/webinars
+}
+
+struct subject {
+    string  name
+    list videos/webinars
+}
+
+video {
+    string title
+    liststring relatedListOfCoursed
+    liststring relatedListOfSubjects
+    liststring tags
+
+}
+
+webinar {
+    string title
+    liststring relatedListOfCoursed
+    liststring relatedListOfSubjects
+    liststring tags
+
+}
+
+

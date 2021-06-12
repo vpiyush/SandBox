@@ -57,11 +57,15 @@ class list {
         }
         void deleteData(int d) {
             Node *it = head;
-            while(it->next !== nullptr) {
+            while(it->next != nullptr) {
                 it = it->next;
                 if(it->data == d) {
                 }
             }
+        }
+
+
+        void reverse() {
         }
 // Assignement ==> break the loop in linklist, where it starts where it ends
     private:

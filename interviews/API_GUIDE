@@ -1,0 +1,4 @@
+
+static pthread_mutex_t  s_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_lock( &s_mutex);
+pthread_mutex_unlock( &s_mutex);

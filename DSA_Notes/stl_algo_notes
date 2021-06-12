@@ -1,0 +1,18 @@
+1] find/search algo
+  > works on o(n) time
+  -> eg. find(arr, arr+n, key)
+  -> returns an iterator to the found key
+  > to get the exact index, subtract base address from the iterator.
+    e.g. index = it-arr;
+
+2] binary_search (sorted arrays) 
+  > works in o(logn) time
+  > e.g. binary_search(arr, arr+n, key)
+  -> returns a bool if element is present
+  > to get the exact index, only if binary search return true, 2 functions are present
+    > lower_bound ==> returns the iterator of element >= key
+    > upper_bound ==> returns the next greater element
+
+3] sort 
+  > time complexity o(nlogn)
+

@@ -1,0 +1,9 @@
+5 steps
+==> define/part sub problem
+==> guess (part of solution)
+==> relate subproblem solution
+==> recurse & memoize OR DP table bottom up
+==> solve original problem
+
+Memoization => stores the already calculated  results.
+butwe need to be careful if subpromlem has a recursive depency on each other it would become infinte
