@@ -1,0 +1,65 @@
+Book Review System:
+Requirements:
+1. A user should be allowd to Add a book
+2. A user should be allowd to Review a book
+3. A user should be allowd to list all books in the system given the page limit
+4. A user should be allowd to list all reviews for a given book
+
+Dev Requirements
+There will be 2 microservices
+    a. first service would serve the endpoints, perfrom all validations and pass message
+    to the next service over grpc
+    b. Second service would talk to couchbase DB and perform the actual task and return the
+    appropriate response.
+Note: no need of any configuration for now.
+
+book (Method - Post), "localhost:9999/api/v1/book/"
+Sample request.
+{
+    Name: "The Go programming Language",
+    Author: ["Alan A Donovan", "Brian W Keringhan"],
+    ShortDesc: "This book is meant to help you start using Go effectively right away and to use it well, taking
+    full advantage of Go’s language features and standard libraries to write clear, idiomatic, and
+    efficient programs",
+}
+Sample Response
+{
+    Status: 200
+    Message: "Success"
+}
+book (Method - Get), "localhost:9999/api/v1/book/?limit=10"
+Sample Response
+{
+    Status: 200
+    Books: [
+        {
+            Name: "The Go programming Language",
+            Author: ["Alan A Donovan", "Brian W Keringhan"],
+            ShortDesc: "This book is meant to help you start using Go effectively right away and to use it well, taking
+            full advantage of Go’s language features and standard libraries to write clear, idiomatic, and
+            efficient programs",
+        },
+     ]
+}
+
+Review (Method - Post), "localhost:9999/api/v1/review/"
+Sample Request below: (Scores can be 1-5)
+{
+    {BookID: "1", Name: "Joe", Score: 5, Text: "Amazing book, loved it!!"},	
+}
+
+Review (Method - Get), "localhost:9999/api/v1/review/?bookId=1"
+Sample Response
+{
+    Status: 200
+    Reviews: [ {
+       { Name: "Joe", Score: 5, Text: "Amazing book, loved it!!"},
+       { Name: "Trump", Score: 1, Text: "Didn't like the book so much"}}
+    }]
+}
+
+Note: Return apporpriate errors If any
+
+
+
+

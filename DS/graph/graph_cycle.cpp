@@ -52,10 +52,11 @@ bool  is_tree(int src) {
 int main(){
     //each vertex will be the key
     //each key will have list of edges connected to it
-    addEdge(0,1);
-    addEdge(1,2);
     addEdge(2,3);
     addEdge(3,4);
+    //addEdge(1,0);
+//    addEdge(2,3);
+ //   addEdge(3,4);
     //addEdge(4,0);
 
     /*
@@ -74,6 +75,6 @@ int main(){
         cout << endl;
     }*/
 //    DFS_non_connected();
-    cout << is_tree(0) << endl;
+    cout << is_tree(2) << endl;
     return 0;
 }

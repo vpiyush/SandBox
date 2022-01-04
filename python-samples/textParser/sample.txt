@@ -1,0 +1,9 @@
+2021-10-11 12:28:56.207771 [INSTRUMENT UPDATED ][seq=149005][source=inpbsf1][id=-1][reference=0][updateType=update(U)][ProductType=options(2)][MasterId=43928421][LastDataUpdateTime<1000>=2021-10-11 11:55:18.117][UnderlierId<311>=43839340][UBSTd<8027>=30154266494][Exchange<207>=XSFE][Symbo1<55>=XMV1C][UnderlierUBSId<8071>=30148582871][PutOrCall<201>=call(C)][StrikePrice<7202>=97.90][Currency<15>=AUD][OptionType<8017>=unknown(F)][Dml1Mnemonic<8098>=XTV10097900C]
+
+2021-10-11 14:10:34.567064 [INSTRUMENT SUPPL UPDATED ][seq=156736][source=audrppb1][id=0][reference=179][refDataUpdateType=update(U)][category=referencePrice(R)][ProductType=options(2)][MasterId=43928421][ReferenceAskPrice<6202>=0.605]
+
+2021-10-11 14:10:34.567064 [INSTRUMENT SUPPL UPDATED ][seq=156736][source=audrppb1][id=0][reference=179][refDataUpdateType=update(U)][category=referencePrice(R)][ProductType=options(2)][MasterId=43928421][ReferenceBidPrice<6202>=0.505]
+
+2021-10-11 14:10:34.567064 [INSTRUMENT SUPPL UPDATED ][seq=156736][source=audrppb1][id=0][reference=179][refDataUpdateType=update(U)][category=referencePrice(R)][ProductType=options(2)][MasterId=43928421][ReferenceAskPrice<6202>=0.700]
+
+2021-10-13 12:28:56.207771 [INSTRUMENT UPDATED ][seq=149005][source=inpbsf1][id=-1][reference=0][updateType=update(U)][ProductType=options(2)][MasterId=43928421][LastDataUpdateTime<1000>=2021-10-11 11:55:18.117][UnderlierId<311>=43839340][UBSTd<8027>=30154266494][Exchange<207>=XSFE][Symbo1<55>=XMV1C][UnderlierUBSId<8071>=30148582871][PutOrCall<201>=call(C)][StrikePrice<7202>=97.90][Currency<15>=AUD][OptionType<8017>=unknown(F)][Dml1Mnemonic<8098>=XTV10097900C]

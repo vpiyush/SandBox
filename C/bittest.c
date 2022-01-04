@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <memory.h>
 #include <stdint.h>
+#define TEST 29
 
 int main () {
+
+    printf ("test %d\n", TEST);
 
     char jbytes[20];
     uint16_t node = 65535;
